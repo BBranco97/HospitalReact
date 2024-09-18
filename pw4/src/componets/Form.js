@@ -18,7 +18,7 @@ const Form = ({ userType }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://seu-backend-api.com/cadastrar', {
+      const res = await fetch('https://seu-backend-api.com/cadastrar', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
