@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Input from '../../componets/Input';
-import Button from '../../componets/Button';
+import Input from '../componets/Input';
+import Button from '../componets/Button';
 
 const Form = ({ userType }) => {
   const [formData, setFormData] = useState({
