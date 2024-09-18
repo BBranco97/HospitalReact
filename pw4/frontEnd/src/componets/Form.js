@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Input from '../../componets/Input';
-import Button from '../../componets/Button';
+import Input from '../componets/Input.js';
+import Button from '../componets/Button.js';
 
 const Form = ({ userType }) => {
   const [formData, setFormData] = useState({
@@ -18,7 +18,7 @@ const Form = ({ userType }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://seu-backend-api.com/cadastrar', {
+      const res = await fetch('https://seu-backend-api.com/cadastrar', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
